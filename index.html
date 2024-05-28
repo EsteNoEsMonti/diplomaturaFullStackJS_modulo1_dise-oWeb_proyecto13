@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ISTAL</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <!-- navBar component 🌙 -->
+  <div id="NavBar"></div>
+
+  <!-- main 🌙 -->
+  <!-- Welcome banner 🌙 -->
+  <!-- <section class="min-h-[110vh]  bg-gradient-to-r from-blue-900 to-purple-700 relative grid grid-cols-2 gap-4 place-content-center"> -->
+  <section class="min-h-[105vh] relative grid grid-cols-2 gap-4 place-content-center"
+    style="background-image: url('/assets/img/banner-montain.png');">
+    <div class="col-span-1 flex items-center justify-center text-white mt-[-20vh]">
+      <div class="px-10">
+        <h1 class="text-4xl font-bold mb-4">
+          ¡Bienvenidos al Instituto Superior de Tecnologías Aplicadas Lucas (ISTAL)!
+        </h1>
+        <p class="text-lg">
+          Descubre cómo en ISTAL, la tecnología y la creatividad se combinan para abrir puertas a un futuro lleno de
+          posibilidades. ¡Únete a nuestra comunidad y comienza tu camino hacia el éxito!
+        </p>
+        <p class="text-lg mt-5">
+          Explora nuestros programas y aplica hoy mismo.
+        </p>
+        <a>
+          BUTTON A Diplomaturas Y A AL CODIGO EN GITHUB
+        </a>
+      </div>
+    </div>
+    <div class="col-span-1 flex items-center justify-center mt-[-20vh]">
+      <img src="/assets/img/logo_ISTAL_sin_fondo.svg" alt="Logo ISTAL" width="50%">
+    </div>
+    <div class="col-span-2 absolute bottom-0 left-0 right-0 flex justify-center mt-auto">
+      <img class="min-w-screen" src="/assets/img/asset-bt.svg" alt="asset-bt">
+    </div>
+  </section>
+
+  <!-- section sarasa 🌙 -->
+  <section class="text-black/85 py-16">
+    <div class="container mx-auto text-center">
+      <h1 class="text-4xl md:text-5xl font-bold mb-6">Descubre ISTAL</h1>
+      <p class="text-lg md:text-xl leading-relaxed max-w-3xl mx-auto">
+        Innovación y Excelencia en Educación Tecnológica. En el Instituto Superior de Tecnologías Aplicadas Lucas
+        (ISTAL), nos dedicamos a formar líderes en el campo de la tecnología. Nuestro enfoque se centra en la educación
+        práctica y teórica, asegurando que nuestros estudiantes estén preparados para enfrentar los desafíos del mundo
+        moderno.
+      </p>
+    </div>
+  </section>
+
+  <!-- section info 🌙 -->
+  <!-- <section class="bg-black/85"> -->
+  <!-- <section style="background-image: url('/assets/img/card-contact.jpg');"> -->
+  <section class="bg-gradient-to-r from-blue-900 to-purple-700">
+
+    <div class="flex justify-center">
+      <img class="min-w-screen" src="/assets/img/asset-top-2.svg" alt="Logo ISTAL">
+    </div>
+
+    <div class="container mx-auto p-6">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6">
+        <!-- Primera tarjeta -->
+        <div class="mx-auto relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96">
+          <div class="p-6">
+            <img src="/assets/img/code.svg" alt="" class="w-12 h-12 mx-auto">
+            <h5
+              class="text-center block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-black/85">
+              Diplomaturas
+            </h5>
+            <p class="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
+              Ofrecemos una amplia gama de programas académicos en áreas como informática, ingeniería, robótica, y
+              tecnologías emergentes. Cada programa está diseñado para proporcionar habilidades técnicas y conocimientos
+              avanzados, combinando clases magistrales con prácticas en laboratorios de última generación.
+            </p>
+          </div>
+          <div class="p-6 pt-0">
+            <a href="/pages/diplomaturas.html" class="inline-block">
+              <button
+                class="flex items-center gap-2 px-4 py-2 font-sans text-xs font-bold text-center text-black uppercase align-middle transition-all rounded-lg select-none disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none hover:bg-gray-900/10 active:bg-gray-900/20"
+                type="button">
+                Más información
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                  stroke="currentColor" class="w-4 h-4">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3">
+                  </path>
+                </svg>
+              </button>
+            </a>
+          </div>
+        </div>
+        <!-- Segunda tarjeta -->
+        <div class="mx-auto relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96">
+          <div class="p-6">
+            <img src="/assets/img/users-three.svg" alt="" class="w-12 h-12 mx-auto">
+            <h5
+              class="text-center block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-black/85">
+              Equipo
+            </h5>
+            <p class="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
+              Expertos apasionados en tecnología aplicada te guiarán en tu viaje educativo en ISTAL. Con experiencia y
+              dedicación, están comprometidos en tu éxito.
+            </p>
+          </div>
+          <div class="p-6 pt-0">
+            <a href="/pages/profesores.html" class="inline-block">
+              <button
+                class="flex items-center gap-2 px-4 py-2 font-sans text-xs font-bold text-center text-black uppercase align-middle transition-all rounded-lg select-none disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none hover:bg-gray-900/10 active:bg-gray-900/20"
+                type="button">
+                Más información
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                  stroke="currentColor" class="w-4 h-4">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3">
+                  </path>
+                </svg>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Tercera tarjeta -->
+      <div class="mt-6 flex justify-center">
+        <div class="relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96">
+          <div class="p-6">
+            <img src="/assets/img/user-circle.svg" alt="" class="w-12 h-12 mx-auto">
+            <h5
+              class="text-center block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-black/85">
+              ¡Únete!
+            </h5>
+            <p class="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
+              ¡Los requisitos son muchas ganas de aprender y crecer en tecnologías aplicadas!
+            </p>
+          </div>
+          <div class="p-6 pt-0">
+            <a href="/pages/contacto.html" class="inline-block">
+              <button
+                class="flex items-center gap-2 px-4 py-2 font-sans text-xs font-bold text-center text-black uppercase align-middle transition-all rounded-lg select-none disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none hover:bg-gray-900/10 active:bg-gray-900/20"
+                type="button">
+                Más información
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                  stroke="currentColor" class="w-4 h-4">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25L21 12m0 0l-3.75 3.75M21 12H3">
+                  </path>
+                </svg>
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="flex justify-center">
+      <img class="min-w-screen" src="/assets/img/asset-bt.svg" alt="Logo ISTAL">
+    </div>
+
+  </section>
+
+
+
+  <!-- Footer component 🌙 -->
+  <div id="Footer"></div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      fetch('/components/NavBar.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('NavBar').innerHTML = data);
+
+      fetch('/components/Footer.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('Footer').innerHTML = data);
+    });
+  </script>
+</body>
+
+</html>

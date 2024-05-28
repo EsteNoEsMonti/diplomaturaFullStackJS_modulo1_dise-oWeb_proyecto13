@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ISTAL</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <!-- navBar component 🌙 -->
+  <div id="NavBar"></div>
+
+  <!-- main 🌙 -->
+  <section class="min-h-[70vh] p-20">
+    <div class="bg-gradient-to-r from-blue-900 to-purple-700 rounded-lg p-6 text-white">
+      <div class="grid grid-cols-2 gap-4">
+        <div>
+          <h2 class="text-3xl font-bold mb-4">Contacto</h2>
+          <div class="mt-2 flex items-center">
+            <img src="/assets/img/whatsapp-logo.svg" alt="Teléfono:" class="w-6 h-6 mr-2">
+            <span>+1 234 567 890</span>
+          </div>
+
+          <div class="mt-2 flex items-center">
+            <img src="/assets/img/at.svg" alt="e-mail:" class="w-6 h-6 mr-2">
+            <span>contacto@istal.com</span>
+          </div>
+
+          <div class="mt-2 flex items-center">
+            <img src="/assets/img/instagram-logo.svg" alt="ig:" class="w-6 h-6 mr-2">
+            <span>@ISTAL</span>
+          </div>
+
+          <div class="mt-2 flex items-center">
+            <img src="/assets/img/twitter-logo.svg" alt="Teléfono:" class="w-6 h-6 mr-2">
+            <span>@ISTAL</span>
+          </div>
+          <!-- fomr 🌙 -->
+          <div class="">
+            <h2 class="text-xl font-bold mb-4">Formulario de Contacto</h2>
+            <form action="#" method="post" class="">
+              <input type="email" name="email" placeholder="Correo Electrónico"
+                class="text-gray-900 px-4 py-2 border border-gray-300 rounded-md mb-4">
+              <button type="submit"
+                class="bg-gray-900 text-white px-6 py-2 rounded-md hover:bg-black transition duration-300">Enviar</button>
+            </form>
+          </div>
+        </div>
+        <div class="text-center">
+          <img src="/assets/img/logo_ISTAL_sin_fondo.svg" alt="Logo de ISTAL" class="w-72 mx-auto">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer component 🌙 -->
+  <div id="Footer"></div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      fetch('/components/NavBar.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('NavBar').innerHTML = data);
+
+      fetch('/components/FooterDark.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('Footer').innerHTML = data);
+    });
+  </script>
+</body>
+
+</html>
+
+
+
+<!-- <main class="min-h-[65vh] p-10">
+  <div class="grid min-h-[140px] w-full place-items-center overflow-x-scroll rounded-lg p-6 lg:overflow-visible">
+    <figure class="relative w-full h-96">
+      <img class="object-cover object-center w-full h-full rounded-xl" src="/assets/img/card-contact.jpg"
+        alt="card-lego" />
+      <figcaption
+        class="absolute bottom-8 left-1/2 w-[calc(100%-4rem)] -translate-x-1/2 flex justify-between rounded-xl border border-white bg-white/75 py-4 px-6 shadow-lg shadow-black/5 saturate-200 backdrop-blur-sm">
+        <div class="flex items-center w-3/10">
+          <img src="/assets/img/logo_ISTAL_sin_fondo.svg" alt="logo" class="w-full h-auto" />
+        </div>
+        <div class="w-7/10 pl-4 mr-20">
+          <p class="font-bold text-lg">ISTAL - Instituto Superior de Tecnologías Aplicadas Lucas</p>
+          <div class="mt-2 flex items-center">
+            <img src="/assets/img/whatsapp-logo.svg" alt="Teléfono:" class="w-6 h-6 mr-2">
+            <span>+1 234 567 890</span>
+          </div>
+          
+          <div class="mt-2 flex items-center">
+            <img src="/assets/img/at.svg" alt="e-mail:" class="w-6 h-6 mr-2">
+            <span>contacto@istal.com</span>
+          </div>
+          
+          <div class="mt-2 flex items-center">
+            <img src="/assets/img/instagram-logo.svg" alt="ig:" class="w-6 h-6 mr-2">
+            <span>@ISTAL</span>
+          </div>
+
+          <div class="mt-2 flex items-center">
+            <img src="/assets/img/twitter-logo.svg" alt="Teléfono:" class="w-6 h-6 mr-2">
+            <span>@ISTAL</span>
+          </div>
+        </div>
+      </figcaption>
+    </figure>
+  </div>
+
+</main> -->

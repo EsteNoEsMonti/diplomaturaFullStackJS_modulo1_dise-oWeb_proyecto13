@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ISTAL</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <!-- navBar component 🌙 -->
+  <div id="NavBar"></div>
+
+  <!-- main 🌙 -->
+  <!-- Diplomatura banner 🌙 -->
+  <!-- <section class="min-h-[75vh] relative grid grid-cols-2 gap-4 place-content-center" style="background-image: url('/assets/img/banner-montain.png');"> -->
+  <section
+    class="min-h-[75vh] bg-gradient-to-r from-blue-900 to-purple-700 relative grid grid-cols-2 gap-4 place-content-center">
+    <!-- <div class="col-span-1 flex items-center justify-center text-white mt-[-20vh]"> -->
+    <div class="col-span-1 flex items-center justify-center text-white">
+      <div class="px-10">
+        <h1 class="text-4xl font-bold mb-4">
+          Diplomaturas
+        </h1>
+        <p class="text-lg">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa reiciendis possimus earum ut nulla, quaerat
+          atque laboriosam molestias architecto soluta aliquam officia quam distinctio voluptatibus dignissimos quis ea
+          dolorem. Aut.
+        </p>
+        <p class="text-lg">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa reiciendis possimus earum ut nulla, quaerat
+          atque laboriosam molestias architecto soluta aliquam officia quam distinctio voluptatibus dignissimos quis ea
+          dolorem. Aut.
+        </p>
+      </div>
+    </div>
+    <div class="col-span-1 flex items-center justify-center">
+      <img src="/assets/img/instituto-edificio.svg" alt="Logo ISTAL" width="75%">
+    </div>
+    <div class="col-span-2 absolute bottom-0 left-0 right-0 flex justify-center mt-auto">
+      <img class="min-w-screen" src="/assets/img/asset-bt-2.svg" alt="asset-bt">
+    </div>
+  </section>
+
+  <section class="max-w-5xl mx-auto my-10">
+    <div class="container mx-auto text-center">
+      <h1 class="text-3xl md:text-4xl font-bold mb-10 text-black/85">Nuestras Diplomaturas</h1>
+    </div>
+    <div class="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+      <!-- Card 1 -->
+      <div class="relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border rounded-xl">
+        <div
+          class="relative overflow-hidden shadow-lg bg-clip-border rounded-xl">
+          <img src="/assets/img/diplo-data-science.svg" alt="card-image" />
+        </div>
+        <div class="p-6">
+          <h5
+            class="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+            Data Science
+          </h5>
+          <p class="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis officiis explicabo eveniet! Enim inventore
+            necessitatibus delectus omnis vel atque! Veritatis dolorum molestias odio officia velit excepturi accusamus
+            explicabo vel iste?
+          </p>
+        </div>
+        <div class="p-6 pt-0">
+          <a href="/pages/diplomaturas/data-science.html">
+            <button
+              class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
+              type="button">
+              Ver diplomatura
+            </button>
+          </a>
+        </div>
+      </div>
+      <!-- Card 2 -->
+      <div class="relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border rounded-xl">
+        <div
+          class="relative overflow-hidden shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
+          <img src="/assets/img/diplo-desarrollo-web-full-stack.svg" alt="card-image" />
+        </div>
+        <div class="p-6">
+          <h5
+            class="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+            Desarrollo Web Full Stack
+          </h5>
+          <p class="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis officiis explicabo eveniet! Enim inventore
+            necessitatibus delectus omnis vel atque! Veritatis dolorum molestias odio officia velit excepturi accusamus
+            explicabo vel iste?
+          </p>
+        </div>
+        <div class="p-6 pt-0">
+          <a href="/pages/diplomaturas/desarrollo-web-full-stack.html">
+            <button
+              class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
+              type="button">
+              Ver diplomatura
+            </button>
+          </a>
+        </div>
+      </div>
+      <!-- Card 3 -->
+      <div class="relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border rounded-xl">
+        <div
+          class="relative overflow-hidden shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
+          <img src="/assets/img/diplo-diseno-ux.svg" alt="card-image" />
+        </div>
+        <div class="p-6">
+          <h5
+            class="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+            Diseño UX
+          </h5>
+          <p class="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis officiis explicabo eveniet! Enim inventore
+            necessitatibus delectus omnis vel atque! Veritatis dolorum molestias odio officia velit excepturi accusamus
+            explicabo vel iste?
+          </p>
+        </div>
+        <div class="p-6 pt-0">
+          <a href="/pages/diplomaturas/diseno-ux.html">
+            <button
+              class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
+              type="button">
+              Ver diplomatura
+            </button>
+          </a>
+        </div>
+      </div>
+      <!-- Card 4 -->
+      <div class="relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border rounded-xl">
+        <div
+          class="relative overflow-hidden shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
+          <img src="/assets/img/diplo-inteligencia-artificial.svg" alt="card-image" />
+        </div>
+        <div class="p-6">
+          <h5
+            class="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+            Inteligencia Artificial
+          </h5>
+          <p class="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis officiis explicabo eveniet! Enim inventore
+            necessitatibus delectus omnis vel atque! Veritatis dolorum molestias odio officia velit excepturi accusamus
+            explicabo vel iste?
+          </p>
+        </div>
+        <div class="p-6 pt-0">
+          <a href="/pages/diplomaturas/inteligencia-artificial.html">
+            <button
+              class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
+              type="button">
+              Ver diplomatura
+            </button>
+          </a>
+        </div>
+      </div>
+      <!-- Card 5 -->
+      <div class="relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border rounded-xl">
+        <div
+          class="relative overflow-hidden shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
+          <img src="/assets/img/diplo-marketing-specialist.svg" alt="card-image" />
+        </div>
+        <div class="p-6">
+          <h5
+            class="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+            Marketing Specialist
+          </h5>
+          <p class="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis officiis explicabo eveniet! Enim inventore
+            necessitatibus delectus omnis vel atque! Veritatis dolorum molestias odio officia velit excepturi accusamus
+            explicabo vel iste?
+          </p>
+        </div>
+        <div class="p-6 pt-0">
+          <a href="/pages/diplomaturas/marketing-specialist.html">
+            <button
+              class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
+              type="button">
+              Ver diplomatura
+            </button>
+          </a>
+        </div>
+      </div>
+      <!-- Card 6 -->
+      <div class="relative flex flex-col text-gray-700 bg-white shadow-md bg-clip-border rounded-xl">
+        <div
+          class="relative overflow-hidden shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
+          <img src="/assets/img/diplo-robotica.svg" alt="card-image" />
+        </div>
+        <div class="p-6">
+          <h5
+            class="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+            Robotica
+          </h5>
+          <p class="block font-sans text-base antialiased font-light leading-relaxed text-inherit">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facilis officiis explicabo eveniet! Enim inventore
+            necessitatibus delectus omnis vel atque! Veritatis dolorum molestias odio officia velit excepturi accusamus
+            explicabo vel iste?
+          </p>
+        </div>
+        <div class="p-6 pt-0">
+          <a href="/pages/diplomaturas/robotica.html">
+            <button
+              class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gray-900 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none"
+              type="button">
+              Ver diplomatura
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer component 🌙 -->
+  <div id="Footer"></div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      fetch('/components/NavBar.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('NavBar').innerHTML = data);
+
+      fetch('/components/FooterDark.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('Footer').innerHTML = data);
+    });
+  </script>
+</body>
+
+</html>

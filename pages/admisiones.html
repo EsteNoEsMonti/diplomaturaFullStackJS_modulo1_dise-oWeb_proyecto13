@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ISTAL</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <!-- navBar component 🌙 -->
+  <div id="NavBar"></div>
+
+  <!-- main 🌙 -->
+  <main class="grid grid-cols-3 gap-4 py-8 px-16">
+
+    <section class="col-span-2 container mx-auto">
+      <h1 class="text-3xl font-bold mb-4">Proceso de Admisiones</h1>
+      <p class="text-lg mb-4">¡Bienvenido al proceso de admisiones de ISTAL! Aquí encontrarás toda la información
+        necesaria para solicitar tu ingreso a nuestra institución.</p>
+      <div class="bg-gray-100 p-4 rounded-lg mb-4">
+        <h2 class="text-xl font-bold mb-2">Requisitos de Admisión</h2>
+        <ul class="list-disc ml-8">
+          <li class="mb-2">Completar el formulario de solicitud en línea.</li>
+          <li class="mb-2">Presentar los documentos académicos requeridos.</li>
+          <li class="mb-2">Realizar el pago de la tarifa de solicitud.</li>
+          <li class="mb-2">Participar en una entrevista de admisión (según sea necesario).</li>
+        </ul>
+      </div>
+      <div class="bg-gray-100 p-4 rounded-lg">
+        <h2 class="text-xl font-bold mb-2">Proceso de Solicitud</h2>
+        <p class="mb-2">Para comenzar el proceso de admisión, sigue estos pasos:</p>
+        <ol class="list-decimal ml-8">
+          <li class="mb-2">Completa el formulario de solicitud en línea en nuestro sitio web.</li>
+          <li class="mb-2">Reúne los documentos académicos requeridos, como transcripciones y certificados.</li>
+          <li class="mb-2">Presenta los documentos junto con el formulario de solicitud en nuestra institución.</li>
+          <li class="mb-2">Recibirás una confirmación por correo electrónico una vez que tu solicitud haya sido
+            recibida.
+          </li>
+          <li class="mb-2">Se notificará por correo electrónico agendando una fecha para su entrevista.</li>
+          <li class="mb-2">Recibirás una confirmación por correo electrónico una vez que tu entrevista fue aprobada o rechazada.
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="col-span-1">
+      <div class="p-5 rounded-xl shadow-lg w-full max-w-md border-t-8 border-x border-b border-black/85">
+
+        <h2 class="text-2xl font-semibold mb-6 text-center">Formulario de Inscripción</h2>
+        <form action="#" method="POST" class="space-y-4">
+          <div>
+            <label for="nombre" class="block text-sm font-medium text-gray-700">Nombre Completo</label>
+            <input type="text" id="nombre" name="nombre" required
+              class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-indigo-500 focus:border-indigo-500">
+          </div>
+          <div>
+            <label for="email" class="block text-sm font-medium text-gray-700">Correo Electrónico</label>
+            <input type="email" id="email" name="email" required
+              class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-indigo-500 focus:border-indigo-500">
+          </div>
+          <div>
+            <label for="telefono" class="block text-sm font-medium text-gray-700">Número de Teléfono</label>
+            <input type="tel" id="telefono" name="telefono" required
+              class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-indigo-500 focus:border-indigo-500">
+          </div>
+          <div>
+            <label for="diplomatura" class="block text-sm font-medium text-gray-700">Diplomatura</label>
+            <select id="diplomatura" name="diplomatura" required
+              class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-indigo-500 focus:border-indigo-500">
+              <option value="">Selecciona una opción</option>
+              <option value="diplomatura1">Data Science</option>
+              <option value="diplomatura2">Desarrollo Web Full Stack</option>
+              <option value="diplomatura3">Diseño UX</option>
+              <option value="diplomatura4">Inteligencia Artificial</option>
+              <option value="diplomatura5">Marketing Specialist</option>
+              <option value="diplomatura6">Robotica</option>
+            </select>
+          </div>
+          <div>
+            <label for="mensaje" class="block text-sm font-medium text-gray-700">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="4"
+              class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm p-2 focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+          </div>
+          <div>
+            <button type="submit"
+              class="w-full bg-gradient-to-r from-blue-900 to-purple-700 text-white font-medium p-2 rounded-md shadow-sm hover:bg-gradient-to-r from-blue-900 to-purple-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">Enviar</button>
+          </div>
+        </form>
+      </div>
+
+    </section>
+  </main>
+
+
+  <!-- Footer component 🌙 -->
+  <div id="Footer"></div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      fetch('/components/NavBar.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('NavBar').innerHTML = data);
+
+      fetch('/components/FooterDark.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('Footer').innerHTML = data);
+    });
+  </script>
+</body>
+
+</html>
